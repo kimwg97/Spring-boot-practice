@@ -3,10 +3,12 @@ package hello.hellospirng.service;
 import hello.hellospirng.domain.Member;
 import hello.hellospirng.repository.MemberRepository;
 import hello.hellospirng.repository.MemoryMemberRepository;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
+@Service
 public class MemberService {
 
     private final MemberRepository memberRepository;
