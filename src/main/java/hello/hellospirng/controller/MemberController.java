@@ -38,7 +38,7 @@ public class MemberController {
     public String List(Model model){
         List<Member> members = memberService.findMember();
         model.addAttribute("members", members);
-        return "members/memberlist";
+        return "members/memberList";
     }
 
 }
